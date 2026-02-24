@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About TaskMaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="about-style.css">
+</head>
+
+<body>
+    <div class="noise-overlay"
+        style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; pointer-events: none; z-index: 9999; opacity: 0.03; background-image: url('data:image/svg+xml,%3Csvg viewBox=\'0 0 200 200\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noiseFilter\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.65\' numOctaves=\'3\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noiseFilter)\'/%3E%3C/svg%3E');">
+    </div>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="6" fill="#F94545" />
+                    <path d="M7 12L10.5 15.5L18 8" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>TaskMaster</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html" style="color:var(--text-primary); font-weight:600;">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-auth">
+                <a href="login.html" class="sign-in">Sign in</a>
+                <a href="signup.html" class="btn-primary">Sign up for free</a>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="about-hero">
+            <div class="container reveal">
+                <h1>Redefining productivity for modern teams.</h1>
+                <p class="about-lead">We believe that organizing your work and personal life shouldn't require five
+                    different apps. Start bringing balance back to your life.</p>
+            </div>
+            <div class="team-image scroll-reveal">
+                <div class="img-placeholder">
+                    <span>Our Team</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="values-section container scroll-reveal">
+            <h2>Our Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Simplicity First</h3>
+                    <p>We strip away the noise so you can focus on what actually matters. Your workspace should be a
+                        place of clarity, not stress.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Premium Polish</h3>
+                    <p>We sweat the details. From micro-interactions to typography, every pixel represents our
+                        commitment to an enjoyable user experience.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Work-Life Harmony</h3>
+                    <p>Designed for humans, not just resources. Keep your personal to-dos and team projects in sync
+                        without compromising either.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-bottom scroll-reveal">
+            <h2>Join our mission.</h2>
+            <a href="signup.html" class="btn-primary btn-large cta-bounce">See open roles</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid container">
+            <div class="footer-col brand-col">
+                <a href="index.html" class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="6" fill="#F94545" />
+                        <path d="M7 12L10.5 15.5L18 8" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>TaskMaster</span>
+                </a>
+                <p>&copy; 2026 TaskMaster</p>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>App</h4>
+                <a href="#">macOS</a>
+                <a href="#">iOS</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
