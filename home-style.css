@@ -47,7 +47,6 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
-    cursor: none !important;
 }
 
 body {
@@ -100,45 +99,6 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 24px;
-}
-
-/* Custom Stylish Cursor */
-.cursor-dot,
-.cursor-outline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    z-index: 10000;
-    pointer-events: none;
-}
-
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent);
-}
-
-.cursor-outline {
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(255, 59, 29, 0.5);
-    transition: width 0.2s ease-out, height 0.2s ease-out, background-color 0.2s ease-out;
-}
-
-.cursor-outline.hover {
-    width: 60px;
-    height: 60px;
-    background-color: rgba(255, 59, 29, 0.1);
-    border-color: rgba(255, 59, 29, 0.2);
-}
-
-body.is-dragging .cursor-outline {
-    width: 24px;
-    height: 24px;
-    background-color: rgba(255, 59, 29, 0.4);
-    border-color: var(--accent);
 }
 
 /* Typography */
