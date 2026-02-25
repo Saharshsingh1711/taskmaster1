@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (cursorDot && cursorOutline) {
         window.addEventListener('mousemove', (e) => {
-            const posX = e.clientX;
-            const posY = e.clientY;
+            // Use pageX/pageY because the cursor elements now have position: absolute
+            // This prevents them from being affected by CSS transform containing blocks
+            const posX = e.pageX;
+            const posY = e.pageY;
 
             cursorDot.style.left = `${posX}px`;
             cursorDot.style.top = `${posY}px`;
