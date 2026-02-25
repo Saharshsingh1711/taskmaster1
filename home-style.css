@@ -101,6 +101,12 @@ a {
     padding: 0 24px;
 }
 
+/* Drag Cursor Style */
+body.is-dragging,
+body.is-dragging * {
+    cursor: grabbing !important;
+}
+
 /* Typography */
 h1,
 h2,

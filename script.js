@@ -112,4 +112,13 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.toggle('menu-open');
         });
     }
+
+    // 7. Dragging Cursor Style
+    document.addEventListener('mousedown', () => {
+        document.body.classList.add('is-dragging');
+    });
+
+    document.addEventListener('mouseup', () => {
+        document.body.classList.remove('is-dragging');
+    });
 });
