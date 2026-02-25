@@ -103,4 +103,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 400); // Matches the 0.4s fade-out animation in CSS
         });
     });
+
+    // 6. Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navbar.classList.toggle('menu-open');
+        });
+    }
 });
