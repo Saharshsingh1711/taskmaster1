@@ -73,14 +73,14 @@ body.page-transitioning {
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
     }
 }
 
 @keyframes pageFadeOut {
     from {
         opacity: 1;
-        transform: translateY(0);
+        transform: none;
     }
 
     to {
